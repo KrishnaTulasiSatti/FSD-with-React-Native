@@ -9,6 +9,8 @@ const result = new Promise(function(resolve,reject) {
     }
 })
 
+
+
 result.then(function(age) {
     console.log(age+" is Eligible");
 })
