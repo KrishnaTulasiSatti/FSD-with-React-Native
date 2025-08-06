@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+
+            /* Selects all the inner child h1 of parent class  */
+
+            .parent1 h1 {
+                color: red;
+            }
+
+            .parent2 > h1 {
+                color : red; 
+            }
+
+            .parent2 + p {
+                color: blue;
+            }
+
+            .parent3 ~ p {
+                color: red;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h1>Top Outer h1</h1>
+        <div class="parent1">
+            <h1>First</h1>
+            <h1>Second</h1>
+            <div>
+                <h1>Inner Child</h1>
+            </div>
+            <p>Third</p>
+        </div>
+
+        <h1>Bottom Outer h1</h1>
+
+         <div class="parent2">
+            <h1>First</h1>
+            <h1>Second</h1>
+            <div>
+                <h1>Inner Child</h1>
+            </div>
+            <p>Third</p>
+        </div>
+
+        <p>Sibling1</p>
+        <p>Sibling2</p>
+
+        <div class="parent3">Division</div>
+
+        <p>Sibling1</p>
+        <p>Sibling2</p>
+        <div>
+            <p>Para in div</p>
+        </div>
+        <p>Sibling3</p>
+        <div>Div2</div>
+        <p>Sibling</p>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>CSS Priority</title>
+
+        <!-- Internal CSS  -->
+
+        <style>
+            p {
+                background-color: red;
+            }
+
+            h1 {
+                background-color: red;
+            }
+
+            h2 {
+                background-color: red !important;
+            }
+
+            h3 {
+                background-color: brown;
+            }
+        </style>
+
+        <!-- External CSS  -->
+
+        <link rel="stylesheet" href="demo2.css">
+
+    </head>
+    <body>
+        
+        <!-- Inline CSS  -->
+
+        <p style="color: black;">Hello</p>
+
+        <h1 style="background-color: yellow;">Hello</h1>
+
+        <!-- To change the Priority levels , use !important -->
+
+        <h2 style="background-color: yellow;">Hello</h2>
+
+        <h3>Internal or External CSS Priority</h3>
+    </body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Health Report - Wellbeing Portal</title>
+
+    <link rel="stylesheet" href="healthreport.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:wght@500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="main-header-webpage">
+        <nav class="main-navigation-webpage">
+            <div classpage="logo-webpage">
+                <img src="./Images/logo.jpg" alt="logo">
+            </div>
+
+            <div class="nav-links-webpage">
+                <ul>
+                    <li><a href="./Welcomepage2.html">Home</a></li>
+                    <li><a href="./symptomschecker.html">Symptom Checker</a></li>
+                    <li><a href="./Hospitals.html">Hospitals</a></li>
+                    <li><a href="./Firstaid.html">First Aid</a></li>
+                    <li class="user-action-webpage"><a href="./Welcomepage.html"><i class="fas fa-user-circle"></i>&nbsp; Log Out</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Your Personalized Health Report</h1>
+            <p class="tagline">Empowering you with insights for better well-being.</p>
+            <div class="caution-alert">
+                <i class="fas fa-info-circle"></i>
+                <span>This report offers guidance. It is not a substitute for professional medical advice. Always consult a doctor if you feel unwell.</span>
+            </div>
+        </div>
+        <div class="hero-image-container">
+            <img src="./Images/hero-doctor.jpg" alt="Doctor giving health advice">
+        </div>
+    </section>
+
+    <main class="main-content-webpage">
+
+        <section class="report-section summary-section">
+            <div class="section-container">
+                <h2 class="section-title"><i class="fas fa-clipboard-list"></i> Report Overview</h2>
+                <div class="summary-grid">
+                    <div class="summary-item">
+                        <span class="item-label">Possible Condition</span>
+                        <span class="item-value">Common Cold</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="item-label">Reported Symptoms</span>
+                        <span class="item-value">Fever, Cough</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="item-label">Symptom Duration</span>
+                        <span class="item-value">1 day</span>
+                    </div>
+                    <div class="summary-item urgency">
+                        <span class="item-label">Urgency Level</span>
+                        <span class="item-value low">Low</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="report-section about-condition-section">
+            <div class="section-container">
+                <h2 class="section-title"><i class="fas fa-book-medical"></i> Understanding Your Condition</h2>
+                <p>The **common cold** is a contagious respiratory illness caused by influenza viruses. It spreads easily from person to person through droplets when an infected person coughs, sneezes, or talks. Symptoms typically include a runny nose, sore throat, cough, and sometimes fever.</p>
+                <a href="https://en.wikipedia.org/wiki/Common_cold" target="_blank" class="learn-more-button">
+                    <i class="fas fa-external-link-alt"></i> Learn More About the Common Cold
+                </a>
+            </div>
+        </section>
+
+        <section class="report-section recommended-actions-section">
+            <div class="section-container">
+                <h2 class="section-title"><i class="fas fa-check-circle"></i> Recommended Next Steps</h2>
+                <div class="action-item-webpage">
+                    <i class="fas fa-vials action-icon"></i>
+                    <p><strong>Suggested Tests:</strong> Not typically required for uncomplicated common colds.</p>
+                </div>
+                <div class="action-item-webpage">
+                    <i class="fas fa-bed action-icon"></i>
+                    <p><strong>Immediate Steps:</strong> Monitor your symptoms closely for the next 24 hours. Ensure you get plenty of rest and stay hydrated.</p>
+                </div>
+                <div class="action-item-webpage">
+                    <i class="fas fa-user-md action-icon"></i>
+                    <p><strong>When to See a Doctor:</strong> If your symptoms worsen significantly, persist beyond a few days, or if you develop new, severe symptoms like difficulty breathing, please consult a medical professional immediately.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="report-section call-to-action-section">
+            <div class="section-container">
+                <h2 class="section-title"><i class="fas fa-hand-holding-medical"></i> Take Action for Your Health</h2>
+                <div class="action-buttons-webpage">
+                    <button class="action-button primary-btn">
+                        <a href="./DietPage.html"><i class="fas fa-apple-alt"></i> Healthy Diet for Recovery</a>
+                    </button>
+                    <button class="action-button secondary-btn">
+                        <a href="./Hospitals.html"><i class="fas fa-hospital"></i> Find Nearby Hospitals</a>
+                    </button>
+                    <button class="action-button download-btn">
+                        <a href="#"><i class="fas fa-download"></i> Download Health Report</a>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="report-section wellbeing-section">
+            <div class="section-container wellbeing-content">
+                <div class="wellbeing-text">
+                    <h2 class="section-title"><i class="fas fa-heartbeat"></i> Prioritize Your Wellbeing</h2>
+                    <p class="quote-text">"Wishing you a speedy recovery!"</p>
+                    <p class="quote-text">"Take care and feel better soon. Your health is your greatest wealth."</p>
+                    <p class="small-note"><i class="fas fa-lightbulb"></i> Remember: Self-care, rest, and hydration are key to a quick recovery.</p>
+                </div>
+                <div class="wellbeing-image-container">
+                    <img src="./Images/istockphoto-2156028739-612x612.jpg" alt="Person recovering and resting">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Your Health Portal. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

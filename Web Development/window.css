@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent {
+    height: 200px;
+    width: 300px;
+
+    border: 2px solid black;
+    position: relative;
+}
+
+.div1 {
+    height: 200px;
+    width: 300px;
+    /* background-color: aliceblue; */
+
+    position: absolute;
+    display: flex;
+
+    perspective: 450px;
+
+}
+
+.child1 {
+    height: 200px;
+    width: 150px;
+    background-color: rgb(145, 214, 216);
+
+    transform-style: preserve-3d;
+    transform-origin: left;
+
+    transition: transform 2s linear;
+    
+}
+
+.child2 {
+    height: 200px;
+    width: 150px;
+    background-color: rgb(145, 214, 216);
+
+    transform-style: preserve-3d;
+    transform-origin: right;
+
+    transition: transform 2s linear;
+
+}
+
+.div1:hover .child1{
+    transform: rotateY(-90deg);
+}
+
+.div1:hover .child2 {
+    transform: rotateY(90deg);
+}
+
+.div2 {
+
+    height: 200px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e40f0f1a;
+    
+}

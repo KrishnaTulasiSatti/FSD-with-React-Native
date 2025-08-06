@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Personal Health Dashboard</title>
+
+    <link rel="stylesheet" href="healthreport2.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="dashboard-header">
+        <div class="header-content">
+            <div class="logo-area">
+                <img src="./Images/logo.jpg" alt="Health Portal Logo" class="portal-logo">
+                <span class="portal-name">HealthFlow</span>
+            </div>
+            <nav class="main-dashboard-nav">
+                <ul>
+                    <li><a href="./Welcomepage2.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="./symptomschecker.html"><i class="fas fa-search-plus"></i> Symptom Checker</a></li>
+                    <li><a href="./Hospitals.html"><i class="fas fa-hospital-building"></i> Hospitals</a></li>
+                    <li><a href="./Firstaid.html"><i class="fas fa-band-aid"></i> First Aid</a></li>
+                    <li class="nav-cta"><a href="./Welcomepage.html"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="health-dashboard-grid">
+
+        <section class="dashboard-card welcome-card">
+            <div class="welcome-text">
+                <h1>Hello There! Your Health Snapshot Awaits.</h1>
+                <p>This personalized report offers insights based on your inputs. Remember, it's for guidance only and not a substitute for professional medical advice.</p>
+                <div class="alert-message">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <span>Always consult a doctor if you feel unwell or have concerns.</span>
+                </div>
+            </div>
+            <div class="welcome-illustration">
+                <img src="./Images/hero-doctor.jpg" alt="Doctor illustration" class="responsive-img">
+            </div>
+        </section>
+
+        <div class="dashboard-card summary-widget">
+            <h3><i class="fas fa-diagnoses"></i> Current Condition Overview</h3>
+            <div class="summary-details">
+                <p><strong>Possible Condition:</strong> <span class="highlight-text condition-name">Common Cold</span></p>
+                <p><strong>Reported Symptoms:</strong> <span class="highlight-text">Fever, Cough</span></p>
+                <p><strong>Symptom Duration:</strong> <span class="highlight-text">1 day</span></p>
+                <p><strong>Urgency Level:</strong> <span class="urgency-low">Low</span></p>
+            </div>
+        </div>
+
+        <div class="dashboard-card about-condition-widget">
+            <h3><i class="fas fa-info-circle"></i> About Your Condition</h3>
+            <p>The **common cold** is a contagious respiratory illness caused by influenza viruses. It spreads easily from person to person through droplets when an infected person coughs, sneezes, or talks.</p>
+            <a href="https://en.wikipedia.org/wiki/Common_cold" target="_blank" class="learn-more-button-dashboard">
+                <i class="fas fa-external-link-alt"></i> Learn More
+            </a>
+        </div>
+
+        <div class="dashboard-card actions-widget">
+            <h3><i class="fas fa-clipboard-check"></i> Recommended Actions</h3>
+            <ul class="action-list-dashboard">
+                <li><i class="fas fa-vials"></i> <strong>Suggested Tests:</strong> Not typically required for this condition.</li>
+                <li><i class="fas fa-monitor-waveform"></i> <strong>Monitor Symptoms:</strong> Keep an eye on your symptoms for 24 hours.</li>
+                <li><i class="fas fa-user-nurse"></i> <strong>Seek Medical Help:</strong> If symptoms worsen significantly or new, severe symptoms develop, contact a doctor immediately.</li>
+            </ul>
+        </div>
+
+        <div class="dashboard-card wellbeing-widget">
+            <h3><i class="fas fa-heartbeat"></i> Recovery & Wellbeing</h3>
+            <p class="quote-dashboard">"Your health is a journey, not a destination. Take care of yourself."</p>
+            <p class="quote-dashboard">"Rest, hydrate, and nurture your body back to strength."</p>
+            <img src="./Images/istockphoto-2156028739-612x612.jpg" alt="Person resting illustration" class="wellbeing-img">
+        </div>
+
+        <div class="dashboard-card cta-widget">
+            <h3>Quick Actions</h3>
+            <div class="button-group-dashboard">
+                <button class="dashboard-btn green-btn"><a href="./DietPage.html"><i class="fas fa-carrot"></i> Diet Plan</a></button>
+                <button class="dashboard-btn yellow-btn"><a href="./Hospitals.html"><i class="fas fa-hospital"></i> Find Hospitals</a></button>
+                <button class="dashboard-btn blue-btn"><a href="#"><i class="fas fa-download"></i> Download Report</a></button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="dashboard-footer">
+        <p>&copy; 2025 HealthFlow. All rights reserved.</p>
+        <div class="footer-links-dashboard">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </footer>
+
+</body>
+</html>

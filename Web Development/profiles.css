@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.cards {
+    padding-top: 50px;
+    width: 100%;
+    min-height: 100vh;
+    max-height : 5000px;
+
+    background-image : linear-gradient(to right ,blue,black);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.card {
+    height: 300px;
+    width: 350px;
+    border: 2px solid white;
+    position: relative;
+    margin: 30px;
+    border-radius: 20px;
+    color: white;
+}
+
+.card:hover .info{
+    font-size: 20px;
+}
+
+.card:hover {
+     box-shadow: 0px 0px 15px 3px white;
+     height: 325px;
+     width: 380px;
+}
+
+.card:hover .hero {
+    height: 90px;
+    width: 80px;
+    box-shadow: 0px 0px 11px 2px white;
+    position: absolute;
+    left: 145px;
+}
+
+.card:hover .contact {
+    position: absolute;
+    top: 260px;
+    left: 90px;
+}
+
+
+.hero {
+    width: 70px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: -40px;
+    left: 130px;
+
+    border: 3px solid ;
+}
+
+.hero:hover {
+    box-shadow: 0px 0px 11px 2px black;
+    height: 90px;
+    width: 80px;
+}
+
+.info {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+
+    font-size: 18px;
+    font-family: "Lexend";
+    
+}
+
+.contact {
+    position: absolute;
+    top: 250px;
+    left: 70px;
+}
+
+.insta:hover {
+   box-shadow: 0px 0px 10px 2px white;
+   border-radius: 50%;
+   
+  
+}
+
+.facebook:hover {
+   box-shadow: 0px 0px 10px 2px white;
+   border-radius: 50%;
+}
+
+.twitter:hover {
+    box-shadow: 0px 0px 17px 3px white;
+    border-radius: 4px;
+}
+
+.whatsapp:hover{
+    box-shadow: 0px 0px 10px 2px white;
+   border-radius: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#nani {
+    background-image: url('./bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#mahesh {
+    background: linear-gradient(to bottom, rgba(145, 140, 127, 1.000) 0%, rgba(103, 109, 146, 1.000) 50%, rgba(6, 62, 128, 1.000) 100.000%);
+}
+
+#ramcharan {
+    background: linear-gradient(to right, rgb(15, 12, 41), rgb(48, 43, 99), rgb(36, 36, 62));
+}
+
+#pawankalyan {
+    background: linear-gradient(to right, rgb(35, 7, 77), rgb(204, 83, 51));
+}
+
+#chiranjeevi {
+    background: linear-gradient(to right, rgb(60, 59, 63), rgb(96, 92, 60));
+}
+
+#ram {
+    background: linear-gradient(to right, rgb(127, 0, 255), rgb(225, 0, 255));
+}
+
+#ram img {
+    width: 80px;
+}
+
+#nagachaitanya {
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(15, 155, 15));
+}
+
+#prabhas {
+    background: linear-gradient(to top, rgb(32, 0, 44), rgb(203, 180, 212));
+}

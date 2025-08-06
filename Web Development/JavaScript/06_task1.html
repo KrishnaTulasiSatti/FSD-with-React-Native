@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+
+        <div class="main-div">
+            <div class="box"></div>
+        </div>
+
+        <div class="buttons">
+            <button class="top" onclick="t()">Top</button>
+            <button class="left" onclick="l()">Left</button>
+            <button class="right" onclick="r()">Right</button>
+            <button class="bottom" onclick="d()">Bottom</button>
+        </div>
+
+        <script>
+            
+            function t() {
+                document.getElementsByClassName("box")[0].style="bottom:100px;"
+            }
+
+            function d() {
+                document.getElementsByClassName("box")[0].style="top:100px;"
+            }
+
+            function l() {
+                document.getElementsByClassName("box")[0].style="right:100px;"
+            }
+
+            function r() {
+                document.getElementsByClassName("box")[0].style="left:100px;"
+            }
+
+
+        </script>
+    </body>
+</html>

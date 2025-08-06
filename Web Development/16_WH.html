@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            .firstimage {
+                width: 100px;
+                height: 100px;
+            }
+
+            .secondimage {
+                width: 200px;
+                height: 200px;
+            }
+
+            .thirdimage {
+                width: 300px;
+                height: 300px;
+            }
+
+            .fourthimage {
+                width: 50%;
+                height: 50%;
+            }
+
+            .parent {
+                border: 2px solid red;
+                width: 500px;
+                height : 500px;
+            }
+
+            .child {
+                width: 50%;
+                height: 50%;
+            }
+
+            .p1 {
+                height: 500px;
+                width: 500px;
+                border: 5px solid red;
+            }
+
+            .c1 {
+                height: 50px;
+                width: calc(100% - 50px);
+                border: 3px solid black;
+            }
+            
+
+        </style>
+    </head>
+    <body>
+       <img src="./download.jpeg" alt="" class="firstimage">
+       <img src="./download.jpeg" alt="" class="secondimage">
+       <img src="./download.jpeg" alt="" class="thirdimage">
+
+       <img src="./download.jpeg" alt="" class="fourthimage">
+
+        <div class="parent">
+            <img src="./download.jpeg" alt="" class="child">
+        </div>
+
+       <div class="p1">
+        <div class="c1"></div>
+       </div>
+
+    </body>
+</html>

@@ -1,0 +1,136 @@
+<html>
+    <head>
+        <style>
+
+            .demo {
+                width: 150px;
+                height: 150px;
+                background-color: black;
+                animation-name: Myanimation;
+                animation-duration: 5s;
+
+            }
+
+            @keyframes Myanimation {
+
+                from {
+                    background-color: black;
+                }
+
+                to {
+                    background-color: red;
+                }
+            }
+
+            .demo1 {
+                width: 150px;
+                height: 150px;
+                background-color: black;
+                position: relative;
+                animation-name: Myanimation2;
+                animation-duration: 2s;
+                animation-iteration-count: 3;
+                animation-timing-function: linear;
+                animation-delay: 4s;  
+
+                /* animation-direction: reverse; */
+
+                animation-direction: alternate;
+                /* 
+                   ease-in : starting slow later fast 
+                   ease-out : reverse
+                */
+            }
+
+            @keyframes Myanimation2 {
+                from {
+                    left: 0px;
+                }
+                to {
+                    left: 400px;
+                }
+            }
+
+            .demo3 {
+                width: 150px;
+                height: 150px;
+                background-color: black;
+                position: relative;
+                animation-name: Myanimation3;
+                animation-duration: 6s;
+                animation-iteration-count: 3;
+            }
+
+            @keyframes Myanimation3 {
+                0% {
+                    background-color: black;
+                }
+
+                50% {
+                    background-color: red;
+                }
+
+                100% {
+                    background-color: blue;
+                }
+            }
+
+
+             .demo4 {
+                width: 150px;
+                height: 150px;
+                background-color: black;
+                position: relative;
+                animation-name: Myanimation4;
+                animation-duration: 10s;
+             }
+
+            @keyframes Myanimation4{
+                0%{
+                    background-color: blue;
+                    border-radius: 10px;
+                    left :0px;
+                }
+                25%{
+                    background-color: blueviolet;
+                    border-radius: 25px;
+                    left: 40px;
+                }
+                50%{
+                    background-color: brown;
+                    border-radius: 55px;
+                    left: 80px;
+                }
+                75%{
+                    background-color: aquamarine;
+                    border-radius: 50%;
+                    left: 120px;
+                }
+                100%{
+                    background-color: bisque;
+                    border-radius: 50%;
+                    left: 160px;
+                }
+            }
+
+
+
+        </style>
+    </head>
+
+    <body>
+        
+        <div class="demo"></div>
+        <br>
+        <div class="demo1"></div>
+
+        <br>
+
+        <div class="demo3"></div>
+
+        <br>
+
+        <div class="demo4"></div>
+
+    </body>
+</html>

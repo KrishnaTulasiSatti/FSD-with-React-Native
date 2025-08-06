@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+}
+.sky {
+    height: 85%;
+    background-image: linear-gradient(rgb(11, 11, 87),black);
+    animation: fadeSky 10s linear forwards;
+}
+
+.moon {
+    width: 120px;
+    height: 120px;
+    background-image: radial-gradient(yellow,white);
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 400px;
+    box-shadow: 0px 0px 20px yellow;
+    animation: moonAnim 5s linear  forwards;
+}
+
+.sun {
+    width: 120px;
+    height: 120px;
+    background-image: radial-gradient(yellow,orange);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 250px;
+    right: 230px;
+    box-shadow: 0px 0px 20px yellow;
+    animation: sunAnim 5s linear 5s forwards;
+}
+
+.tree img {
+    position: absolute;
+    bottom: 100px;
+    left: 20px;
+    height: 350px;
+}
+
+
+.tree2 img {
+    position: absolute;
+    bottom: 100px;
+    right: 190px;
+    height: 350px;
+}
+
+
+.car {
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+    animation : carmoving 10s ease-in;
+}
+.road {
+    height: 20%;
+    background-color: black;
+}
+
+.cloud {
+    position: absolute;
+    animation: cloudAnim 5s 2;
+    animation-direction: alternate;
+}
+
+.cloud1 {
+    position: relative;
+    top: 50px;
+}
+
+.cloud2 {
+    position: relative;
+    top: 100px;
+    left: 400px;
+}
+
+.cloud3 {
+    position: relative;
+    top: 50px;
+    left: 800px;
+}
+
+.cloud4 {
+    position: relative;
+    top: 100px;
+    left: 1200px;
+}
+
+.c1 {
+    position : absolute;
+    height: 80px;
+    width: 110px;
+    background-color: white;
+    border-radius: 50%;
+    top: 60px;
+    left: 100px;
+}
+
+.c2 {
+    height: 80px;
+    width: 110px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 60px;
+    left: 160px;
+}
+
+@keyframes carmoving {
+    from {
+        right: 20px;
+        bottom: 50px;
+    }
+
+    to {
+        right: 1300px;
+    }
+}
+
+@keyframes moonAnim {
+    0% { 
+        top: 50px; 
+        left: 400px; 
+        opacity: 1; 
+    }
+    25% { 
+        top: 100px;
+        left: 350px; 
+        opacity: 0.8; 
+    }
+    50% { 
+        top: 170px; 
+        left: 280px; 
+        opacity: 0.5; 
+    }
+    75% { 
+        top: 250px; 
+        left: 180px;
+        opacity: 0.2; }
+    100% { 
+        top: 330px; 
+        left: 80px;
+        opacity: 0; 
+    }  
+}
+
+@keyframes sunAnim {
+    0% {
+        top: 330px;
+        right: 50px;
+        opacity: 0;
+    }
+    25% {
+        top: 250px;
+        right: 100px;
+        opacity: 0.3;
+    }
+    50% {
+        top: 170px;
+        right: 160px;
+        opacity: 0.6;
+    }
+    75% {
+        top: 100px;
+        right: 200px;
+        opacity: 0.85;
+    }
+    100% {
+        top: 50px;
+        right: 230px;
+        opacity: 1;
+        box-shadow: 0px 0px 2px yellow;
+    }
+}
+
+@keyframes fadeSky {
+   0% {
+    background-image: linear-gradient(to top, #000010, #001f3f); /* Night */
+  }
+  40% {
+    background-image: linear-gradient(to top, #2b4a72, #6c8bb9); /* Dawn */
+  }
+  100% {
+    background-image: linear-gradient(to top, #fdd9a0, #87ceeb); /* Morning with orange tint */
+  }
+}
+
+
+@keyframes cloudAnim {
+    from {
+        left: 0px;
+    }
+    to {
+        left: 300px;
+    }
+}

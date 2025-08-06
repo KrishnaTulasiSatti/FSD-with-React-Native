@@ -1,0 +1,25 @@
+.box {
+    width: 250px;
+    height: 250px;
+    background-color: aqua;
+    position: relative; 
+}
+
+.main-div {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    margin: 5px;
+}
+

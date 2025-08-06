@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <script>
+            function fun() {
+                alert('Loaded')
+            }
+
+            // window.onresize = function() {
+            //     alert('Resized')
+            // }
+
+            // window.onblur = function() {
+            //     alert('Moved')
+            // }
+
+            // window.onfocus = function() {
+            //     alert('Focussed')
+            // }
+
+            // window.onblur = fun;  // Without Arguments
+            // function fun() {
+            //     alert('Moved');
+            // }
+
+            window.onblur = function() { // With Arguments
+                fun('Surekha')
+            }
+            
+
+            function fun(name) {
+               window.alert('Hello ' + name)
+            }
+
+
+        </script>
+
+        <style>
+            .parent {
+                height: 5000px;
+                width: 100%;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+    </body>
+
+    <!-- <body onscroll="console.log('Scrolling...')">
+
+        <div class="parent"></div>
+        
+    </body> -->
+
+    <!-- <body onfocus = "console.log('Focussed')">
+        
+
+    </body> -->
+
+    <!-- <body onblur = "console.log('Moved Out of it')">
+        
+
+    </body> -->
+
+   
+    <!-- <body onload="fun()">
+        
+    </body> -->
+</html>

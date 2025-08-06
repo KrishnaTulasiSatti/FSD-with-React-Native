@@ -1,0 +1,559 @@
+/* Base Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Modern, readable sans-serif */
+    line-height: 1.6;
+    color: #333;
+    background-color: #eef2f6; /* Light, calm background */
+    overflow-x: hidden;
+    min-height: 100vh; /* Ensure full height for sticky footer */
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif; /* Stronger, modern headings */
+    color: #2c3e50;
+    margin-top: 0;
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* --- Dashboard Header (Top Bar) --- */
+.dashboard-header {
+    background-color: #ffffff;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    flex-wrap: wrap;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.portal-logo {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.portal-name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #007bff;
+    letter-spacing: 0.5px;
+}
+
+.main-dashboard-nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-dashboard-nav ul li {
+    margin: 0 18px;
+}
+
+.main-dashboard-nav ul li a {
+    color: #555;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.main-dashboard-nav ul li a:hover,
+.main-dashboard-nav ul li a:focus {
+    background-color: #e0f2fe; /* Light blue on hover */
+    color: #007bff;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.1);
+    outline: none;
+}
+
+.nav-cta a {
+    background-color: #28a745; /* Green for CTA */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.2);
+}
+
+.nav-cta a:hover,
+.nav-cta a:focus {
+    background-color: #218838;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(40, 167, 69, 0.3);
+}
+
+/* --- Main Dashboard Grid Layout --- */
+.health-dashboard-grid {
+    flex-grow: 1; /* Allows main content to take available space */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Flexible columns */
+    gap: 30px; /* Spacing between dashboard cards */
+    padding: 40px;
+    max-width: 1400px;
+    margin: 30px auto; /* Centered with vertical margin */
+}
+
+/* Dashboard Card Base Style */
+.dashboard-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute content vertically */
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.dashboard-card h3 {
+    font-size: 1.5em;
+    color: #007bff;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dashboard-card h3 .fas {
+    color: #0056b3;
+}
+
+/* --- Specific Dashboard Card Styles --- */
+
+/* Welcome Card (Large Feature Card) */
+.welcome-card {
+    grid-column: 1 / -1; /* Spans all columns */
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    background: linear-gradient(135deg, #e0f2fe 0%, #ffffff 100%); /* Light gradient background */
+    padding: 40px;
+}
+
+.welcome-card .welcome-text {
+    flex: 2;
+    min-width: 300px;
+}
+
+.welcome-card h1 {
+    font-size: 2.8em;
+    color: #0056b3;
+    margin-bottom: 15px;
+}
+
+.welcome-card p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.alert-message {
+    background-color: #fff3cd; /* Light warning yellow */
+    color: #856404; /* Dark warning text */
+    padding: 12px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9em;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.alert-message .fas {
+    color: #ffc107; /* Warning icon color */
+    font-size: 1.1em;
+    flex-shrink: 0;
+}
+
+.welcome-card .welcome-illustration {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.welcome-card .responsive-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Summary Widget */
+.summary-widget {
+    background-color: #f0f8ff; /* Light blue tint */
+}
+
+.summary-details p {
+    margin: 12px 0;
+    font-size: 1.05em;
+}
+
+.summary-details strong {
+    color: #0056b3;
+    min-width: 120px;
+    display: inline-block;
+}
+
+.highlight-text {
+    font-weight: 500;
+    color: #333;
+}
+
+.condition-name {
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.urgency-low {
+    font-weight: 700;
+    color: #28a745; /* Green for low urgency */
+    text-transform: uppercase;
+}
+
+/* About Condition Widget */
+.about-condition-widget p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.learn-more-button-dashboard {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #e0f2fe;
+    color: #007bff;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.1);
+}
+
+.learn-more-button-dashboard:hover,
+.learn-more-button-dashboard:focus {
+    background-color: #cce9ff;
+    color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.15);
+    outline: none;
+}
+
+/* Recommended Actions Widget */
+.actions-widget .action-list-dashboard {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.actions-widget .action-list-dashboard li {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 15px;
+    font-size: 1.0em;
+}
+
+.actions-widget .action-list-dashboard li:last-child {
+    margin-bottom: 0;
+}
+
+.actions-widget .action-list-dashboard li .fas {
+    font-size: 1.4em;
+    color: #007bff;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.actions-widget .action-list-dashboard li strong {
+    color: #0056b3;
+}
+
+/* Wellbeing Widget */
+.wellbeing-widget {
+    text-align: center;
+    justify-content: center; /* Center content vertically */
+    padding-bottom: 0; /* Adjust for image at bottom */
+}
+
+.quote-dashboard {
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-size: 1.3em;
+    color: #0056b3;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.wellbeing-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0 0 12px 12px; /* Rounded only at the bottom to blend with card */
+    margin-top: 20px;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.05); /* Subtle shadow from top */
+}
+
+/* Call to Action Widget */
+.cta-widget {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cta-widget h3 {
+    margin-bottom: 25px;
+}
+
+.button-group-dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.dashboard-btn {
+    flex: 1 1 auto; /* Allow buttons to grow and shrink */
+    min-width: 180px; /* Minimum width for buttons */
+    padding: 12px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 500;
+}
+
+.dashboard-btn a {
+    color: white;
+}
+
+.green-btn {
+    background-color: #28a745;
+}
+
+.green-btn:hover,
+.green-btn:focus {
+    background-color: #218838;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.yellow-btn {
+    background-color: #ffc107;
+}
+
+.yellow-btn:hover,
+.yellow-btn:focus {
+    background-color: #e0a800;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.blue-btn {
+    background-color: #007bff;
+}
+
+.blue-btn:hover,
+.blue-btn:focus {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+/* --- Footer --- */
+.dashboard-footer {
+    background-color: #34495e; /* Darker, more professional footer */
+    color: #ecf0f1; /* Light gray text */
+    padding: 25px 20px;
+    text-align: center;
+    font-size: 0.85em;
+    margin-top: auto; /* Pushes footer to the bottom */
+}
+
+.footer-links-dashboard {
+    margin-top: 10px;
+}
+
+.footer-links-dashboard a {
+    color: #bdc3c7;
+    margin: 0 12px;
+    transition: color 0.3s ease;
+}
+
+.footer-links-dashboard a:hover,
+.footer-links-dashboard a:focus {
+    color: #007bff;
+    outline: none;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 1024px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 20px;
+    }
+
+    .main-dashboard-nav ul {
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .main-dashboard-nav ul li {
+        margin: 0;
+    }
+
+    .health-dashboard-grid {
+        padding: 30px 20px;
+        grid-template-columns: 1fr; /* Stack all cards on smaller tablets and mobiles */
+    }
+
+    .welcome-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .welcome-card h1 {
+        font-size: 2.2em;
+    }
+
+    .welcome-card .welcome-text,
+    .welcome-card .welcome-illustration {
+        min-width: unset; /* Remove min-width for stacking */
+        width: 100%;
+    }
+
+    .alert-message {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .alert-message .fas {
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+
+    .dashboard-card h3 {
+        font-size: 1.3em;
+    }
+
+    .button-group-dashboard {
+        flex-direction: column;
+    }
+
+    .dashboard-btn {
+        width: 100%;
+        min-width: unset;
+    }
+}
+
+@media (max-width: 768px) {
+    .portal-name {
+        font-size: 1.5em;
+    }
+    .welcome-card h1 {
+        font-size: 1.8em;
+    }
+    .welcome-card p {
+        font-size: 1em;
+    }
+    .dashboard-card {
+        padding: 25px;
+    }
+    .wellbeing-img {
+        border-radius: 12px; /* Ensure full border radius if it becomes stand-alone */
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content, .health-dashboard-grid, .dashboard-footer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .portal-logo {
+        height: 45px;
+        width: 45px;
+    }
+    .portal-name {
+        font-size: 1.3em;
+    }
+    .main-dashboard-nav ul li a {
+        font-size: 14px;
+        padding: 8px 12px;
+        gap: 5px;
+    }
+    .nav-cta a {
+        padding: 8px 15px;
+    }
+    .dashboard-card {
+        padding: 20px;
+    }
+    .dashboard-card h3 {
+        font-size: 1.2em;
+    }
+    .summary-details strong {
+        min-width: 100px;
+    }
+    .learn-more-button-dashboard {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+    .dashboard-btn {
+        font-size: 0.9em;
+        padding: 10px 15px;
+    }
+    .quote-dashboard {
+        font-size: 1.1em;
+    }
+}

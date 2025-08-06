@@ -1,0 +1,26 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="icon" onclick="fun2()">&#9776;</div>
+        <div class="menu">
+            <span class="close" onclick="fun()">&times</span>
+            <div>Home</div>
+            <div>About</div>
+            <div>Contact</div>
+            <div>Services</div>
+        </div>
+        
+        <script>
+            function fun() {
+                document.getElementsByClassName("menu")[0].style = "left:-200px";
+            }
+
+            function fun2() {
+                document.getElementsByClassName("menu")[0].style = "left:0px";
+            }
+            
+        </script>
+    </body>
+</html>

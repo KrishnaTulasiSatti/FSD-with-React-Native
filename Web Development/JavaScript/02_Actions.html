@@ -1,0 +1,76 @@
+<html>
+    <head>
+
+        <style>
+            .parent {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+            }
+
+            .child {
+                width: 50px;
+                height: 50px;
+                background-color: yellow;
+            }
+
+        </style>
+        <script>
+            function fun() {
+                console.log('Hai')
+            }
+        </script>
+    </head>
+
+    <body>
+        
+        <button onclick="console.log('Hai')">Hit Me</button>
+
+        <button onclick=fun()>Hit Me</button>
+
+        <p>On Double Click</p>
+
+        <button ondblclick=fun()>Hit Me</button>
+
+        <p>Mouse Over</p>
+
+        <button onmouseover=fun()>Hit Me</button>
+
+        <p>Mouse Up</p>
+
+        <button onmouseup=fun()>Hit Me</button>
+
+        <p>Mouse Down</p>
+
+        <button onmousedown=fun()>Hit Me</button>
+
+        <p>Mouse Leave</p>
+
+        <button onmouseleave=fun()>Hit Me</button>
+
+        <p>Mouse Enter</p>
+
+        <button onmouseenter=fun()>Hit Me</button>
+
+        <p>Mouse Out</p>
+
+        <button onmouseout=fun()>Hit Me</button>
+
+        <p>Mouse Leave & Mouse Out</p>
+
+        <div class="parent" onmouseleave=fun()>
+            <div class="child"></div>
+        </div>
+
+        <br>
+
+        <div class="parent" onmouseout=fun()>
+            <div class="child"></div>
+        </div>
+
+        <p>Key Up</p>
+
+        <input type="text" onkeyup=fun()>
+
+    </body>
+</html>

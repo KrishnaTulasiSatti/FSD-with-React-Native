@@ -1,0 +1,850 @@
+<!-- 
+
+
+ HTML is just like the skeleton of Web Page
+
+ <> </>  : Empty fragment
+
+ <property>Content</property> : Complete Tag
+
+ <html></html> Tells the web browser the content inside is HTML content
+
+ <head></head> : Web Page Information
+                 Stylings
+                 Java Script
+                 Fav Icons etc..
+
+ <body></body> : Web Page Content
+                 Any content we see in the web page is written inside the body tag
+
+ h1 : Biggest Heading (property & pre-defined)
+ p  : Paragraph 
+ 
+
+
+-->
+
+<html>
+    <head>
+        <title>Krishna Tulasi</title> <!-- Title of web page -->
+        
+    </head>  
+
+    <body>
+        
+        <!-- Heading Tags -->
+
+        <h1>Krishna Tulasi</h1>
+        <h2>Krishna Tulasi</h2>
+        <h3>Krishna Tulasi</h3>
+        <h4>Krishna Tulasi</h4>
+        <h5>Krishna Tulasi</h5>
+        <h6>Krishna Tulasi</h6>
+
+        <!-- Paragraph Tags -->
+
+        <p>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+           Provident dolor reiciendis vel, architecto, labore eveniet, nobis ea quibusdam
+           quod delectus voluptate assumenda illum ipsam quia. Odit laudantium ea quia cupiditate?
+        </p>
+
+        <!-- Bold -->
+
+        <b>Krishna Tulasi</b> 
+
+        <!-- Underline -->
+
+        <u>Krishna Tulasi</u>
+
+        <!-- Italic -->
+
+        <i>Krishna Tulasi</i>
+
+        <!-- Nested Tags (Tag inside tag)--> 
+
+        <b>
+            <i>
+                <u>Krishna Tulasi</u>
+            </i>
+        </b>
+
+        <center>Krishna Tulasi</center>
+        
+        H<sub>2</sub>O
+
+        a <sup>2</sup> + b<sup>2</sup>
+
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           <hr/>Soluta odio ipsa doloremque necessitatibus amet placeat illo eaque impedit deleniti, 
+           <br/>exercitationem provident? Saepe tempora quibusdam quas placeat quae eligendi dolore fugit.
+        </p>
+
+        <p>I am <mark>Krishna Tulasi</mark></p>
+
+
+        <marquee>Krishna Tulasi</marquee> <!-- Predefined Animated Scrolling -->
+
+        <!-- By default marquee tag follows right to left direction (Left direction)
+             To change the direction we have to use direction attribute -->
+
+        <marquee direction="right">Krishna Tulasi</marquee>
+
+        <!-- <marquee direction="down" height = "500px" loop = "2"><h1>Krishna Tulasi</h1></marquee> -->
+
+        <!-- direction attributes are right,left,up,down
+        loop attribute determines how many times it should scroll
+        By default loop value is infinite loop = "infinite" -->
+
+        <!-- We can also regulate the speed of the marquee tag by using scrollamount attribute -->
+
+        <!-- <marquee direction="right"  scrollamount = "20"><h1>Krishna Tulasi</h1></marquee> -->
+
+        <!-- anchor tag : clickable links -->
+
+        <a href="https://www.youtube.com/">Go To YOUTUBE</a>
+
+        <a href="https://www.youtube.com/" target="_blank">Go To YOUTUBE</a> <!-- Opens in new tab -->
+
+        <a href="https://www.youtube.com/" target="_self">Go To YOUTUBE</a> <!-- Opens in same tab -->
+        <br>
+
+        <!-- To add images in web page -->
+
+        <!-- From internet -->
+
+        <img src="data:image/jpeg;base64,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" alt="">
+
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAwgMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAEAAECAwUGB//EADsQAAIBAwIEAwYEBQIHAQAAAAECAwAEERIhBRMxQSJRYQYUMnGBkUJSocEjsdHh8BViJDM0coOS8YL/xAAaAQADAQEBAQAAAAAAAAAAAAABAgMEAAUG/8QAIREAAgIBBAMBAQAAAAAAAAAAAAECEQMEEiExE0FRIhT/2gAMAwEAAhEDEQA/AORC0tNW6afTX01HyW4p00xWr9NNpFGjtxTppaau0ilprqDuKdNNoq/TS0V1HbyjRThav0VJY89q6jtwOI81NYM9qMigz2oyK1z0WkbRWEGzJ939Kg8WK3XsyB8NCzW+O1Luso8fBkFKbTR7w+lVmKnI8oDKU+mieVTiKuBbBdFILRfKpCKuDyDaKcR0UIqfl+lA6mC6Kfl0UI6nyxQsO1gfLpUXopV1g2leDSC1K2uLW8GYJVJ/Kdm+1XGLFNGafRJwlHhg5WkFq7TTaN6axdrKtNPoNXrHVoirrCosEEZqYiosQ+lSEVdYygBiKrVj3ojlY7VNUpXIrGFCgirf4dw8y4AFZMGARnzrsfZqSITIXxjPesmabS4NuGKYLdcFeOHUykDFc5fW2gnAr1XjU9ubEgEEnpivN+KsvMOMVLBklLstmxqPRz0kZzVTR+lGybmqytbEzE4gnLp+XRGKWKO4XaUculy6vxTEV1nbSnRS01aRTds0LDRWFp8VPFNQbR1MjgUqs0nyH3pUNy+nbTztCyEMGOe1aVvx2/hIBl5igYxJvmspWxs3enBGfSvLjNrpnqSgn2jorX2j8QW6hBH5k6j6VsW99ZTqCk6An8LHBriUZTsRkVPC9sgVohqJLszz00H0eggRqAXdAOuSwpe92CfFcxfQ5rhUZlPhbY+dERy/mXBPlV457IPBR2Q4pw0A/wDEdPJTSPF+GgA80n0CGuUQcwjSwz9jVvuzYHl6U3kAsR0X+ucPLEYlwO+mjrWe2vP+mlDn8vf7VykdruNjmrCiRMC0yxtnYl8Gh5GP4TrdBVsYOe1HWl40WMHGK5BOOtbgRveQyad8OMk/UUXH7R8Pcbs6n0GR9DSuaY0YSR2E/FnkTSST9axrmUyE1nxcYsJcKtyqk9Ne1Rfidjj/AKuLt+LzpY7V0GW59lzGqy1Zk/tBYqxCtI4xnUF60DN7SwKfBC7DzJxTvNFexVikzeZ8VHmDfDAkbHHauWuPaaVwwihRAVxknJB86Al43dMJNLKhkOWKDBqb1MUOtPJnbGdV+JgPmapfiVpGQJLmIE9Bq9M159JcPIfG7N82qpnNTerfpFY6Re2dtP7S2cZkCeIhl0t11DbP71lTe1FxpQRRgNjxMfPOft2rnNZzmol6jLUTZaOngvRtr7SX6iTLKWb4Tj4cnJwP8xiq29oeI63dZtJYYwOg27CsbXS11N5Z/Svhj8NMcZ4gAAL2fA/3Uqy9Z86VJuY2xfBuY2MajS1vjGo1ISf7RUhcMNtKfalHoiJWH4qt5z6fiNR95fGAfXoKcOx77iimK0hc5+zn71PnynH8Q7etR5svn+lPzpR3NGwUi2K6nTAWQ4BzRtrxie2BGzjfZqAjnmDDQXz3oiC0uruXCrv3ZqpGUvRNqPsuk47fPGVMiD1VcHyoPnOx1MxJPUmiX4PxFQzcgsqnsRvvQowhIl5iMOoEecfrXNyXYVFeixZT54q1J2H4jVOtPzSn/wAY/rRVpNbIWM9pPMMbDUFx/Wu3g8YwumyPF06VUZ2P4q6z/Q7YWcUzwOrSRhuWZTq3GwzjrXNXDWLPhYLqLzXUrb/U0FkT6GeJrsEMp86qZvWiG9z/AC3g+emq5jBoHJ52f9+P2Nc5nKFA5Y0xNOdVRNLY1CzTE0s0xoBFUCSalqqOaVsZDEUqfUR0OKYknrQGHpU1KuOCAi1IIo7VAHFTUMxAVSSaZEXY4RfIVagQdcUZb8GuZQCxWMH83X7Vp2fBLeJ9dzKZsfhUaRWiGCcukZp6jHHtmHGAzaVTLHoANzRcUBwdSquRtmuqtpre2wIIUjx0KLg/er24ipGZFDdgGANaVpq7Zmlqr6Ry0UcaHIAP0opLhk6ZHy71vrcW34oYie5KCrBc2m5FvDk9fAN6qsLrgk85hx35B+I1YZI7khDCsrNjbSCa3ILE8R3tuGxso6uy6VH171Y8nDOEycqST3u6wf8AhLMBQP8Auby+1Sm4xdN2zTj3yVpcANv7Ox3RzNDboQMkaMkAdzjYVQbPhMc0S21mroJFVpZSRr8JbKjpjYb96XFuIXdzDb850ghNxGotLcYQjUM6j1f+VVy3VtNx4QmQM4kQctVZiTofOw64yOlZs/C6o2YKb7s2L28eWMNmPrtlun6UNZzWU8z2d3aW5ZsETaAdt/i9PWjbiyZBqazucEd7OYD76a565uoLfjKxsWi5kZTQ4IK5Bx1AO/SssOGa8lOIfecE4Ykzxy2fLcdQCRQLezPDm6GRevRulbfBuJwNwq0suM5khlReTM5yyOR01dd8df50Le262cg5F3DcQk+ErIuoehAP+eVehBwk6kuTy8qnH9QfBh3Xsmiq8kF0fCCdJXsB/Os6f2avERWi0yBlBI6EV1iPJgZ+tS1sTnvVJaaDIx1U0cBJwu9jPitpRtn4e1BsjL8SkfMV6WC/nUJLdJwvNRW0MGXPYioy0fxlY636jzUj5H5d6iQa7q54BaTa8hl1nIK/hNCr7K23MY89ynTG2x2/vUXpciLrV4zjqfFda/slESdFw67AAEDr3JoQeyk7Q61l8RfCqwxt50r0+Reh1qcT9nOUq1m9nuIqxHu5OD1DCmpPFP4U8sPpba8JlbDSjQv3Na9vbRWwHLXfzPWoc/am59ejCEIdHk5MmTJ2F6s43O9PpKBiWAKnGD3oMTDc5GB1zUBLjVhxyz4sdAdqGTLLqLFhi+hoLZzpOn16moKS7HQxIUnfHWh5rp4kBSQFcnJ/Lt03qsT5aMokhUsCniGcEZP9q8+WsnaNi00aNJTjbz6VNWHeqVnjlZkRRjJHM36//KqYlQSBsOrZ616GLVxlwzFk0zRP3OeS7Lf6hcxW+xEUUrD596C4IIIeNcQUtpjVSFycgAHzotLgiNypA8PxH8PrWJw+UG6uvjkMg8PhyWOc5I3+1Zs84Y8n5Ru08Z5INTfFUdXxMIkFoATmS5hc6T8K6hg59ew+tbXAyLf2mWaGFBy7cMJABlSMqMZ9CftXJF9dlbRp15yF9I32Yb7fWuj9ldd215enwI7iNNxsq/T/AA5qebMpwcn2zRp8dSSXSO4m9pr3Jh94yeweIHI+lcn7TFbjiaTXKxyK1rIhfTg9sfvWibdFZm5gLDq2WND8Wt/eOHsi65H0nThDkHt9KzY51NNmvJFuDSOF43c6vZWzRyBcIyZ0dCNOVYUdHw2ytuJC9t/DlN4sZAYjqD2rF42McNt1fGqMop9BjpWnJcK6a1yARtnuK34HCU25HmahzjjSj7NNrtc7DbtUffAfh7VkmXKqdQGc/SpLrk6DBx22zWyWeKPPWGTNM3h8qYXozhthigoUc2zyjq3hG2wPqfpQzTrHnIORkFqh/XGTaXodYJI1Wu8bHrTe+etZUlwCxZMBe1R5/rVo5bViSxOzX96p/e/M9ax+f61ITdfSj5EDxs1ve6VZPOpqG87xsBZypwTvnBpCXxDOcVZPEzjTFFo7sWPSg5QYjhutYIZ1JHpeMJivIow3NjXofEcnHlU1lSXTpVQc5wGOd+3qaA8M2okoNu4qmOaQPrkDP2BZsf52rJkX64ZeEVQTcayqDS3Q4Vc6Rv1oq2nkZsiQERKucYA8IwPmaBMzADDEAHYdqIsNCkSzAldyMLkf58qnJcD0zTbQINIwpDat1Pfr26VO5lJjEqOHQEANkZ6dCPKs+SVQQ8OrCnILd8gbb9vWjLaQwrIXVW5Z2UNg+Wfpvmlg2qFcbGa6toLKZWDyzSoVWIbdc7t6f5tWNwdz7+WYnGCcKcfar+JS4y8UpaSVt3PUjtv5Vn2vhdtyOxPfr1qspb7ZWMFFUbhuuaFhiUFnAQEDJDEkfPptXfcMgt+H2UcKjMaJg+FTv3PXzJriOAcPSO8E8sbjlAkEHbO49K7WBERGVxM5JzqMg+3xVJytUXxxQatxFMpCByc9Qi/1qppoyx/hPp75x5b96HdY1Q6RIO//ADV3P/tQVw7rCxckaVyMOCPr4ulCytHIe1TR6m5QI/i4wemO2Kfh0xmt0gUK0iJ3G+ml7UgxxQHY+MZwMDOM9qF4c6OXTYOcbnO+O3X1qkJ/mzFlinwGbNMiIXIB2Pmf6bVqyPbA62MuSdmVt+nTAPp+tZca5mGSz7HUFO4+vaiLgOGUs2kPkroycfXocfOly5HJqmSjGiyFmW3K5Ly6ssGkKgjcE7U1s4nmmtpFYEMcscHbrjOfIdqTsLdVmAbGkHUG3GR3+x386ALzW9/GVAYfCSV64x0xv5VncnKTaA4hMipy25SjV3JwMEnfpQ8lvIsJl8JQdSNtu+1MbtFjAJOvVktq3Yjz/wA71dJewT2zqNClCMBOmPp61WGfLCkhXjTKoonMi7jGdicdsnv8qa4bLaxpUMTsox+nlR3DsuYshdIGHOPnv6DpWasq3V3MG0IwZgNsjYdPlVoaqTyO/QnjTJ8tvzp96VT94ZfCIpCBtkRpSq/9LB4yl7oy6g8mrB3XXt8+1Z7yRByckse5OrH6dahJF4G5UgI7qRuPPrQjagcblhUIKjUoBNxMryNgIo7YqqJlwxZtwNhnrVRyRmpB/Dg56UaHS4LnYFSp8PfGDjNFwqiR6GlwPMbA0GgLnbDLnPUZqT5EYRcAE6ie5oNWjmjYtLeOVNcs2Qp8I2X7Ubz9KMsYjDgZPMPby9T3xQFlPboVMrKVK53PTHp57mqOIXCLHIibkkeL96hTsCXsBv5DJO7v1z2P0qmCQRyhiCwBzgVDckbb96P4bbxsxM6ry13JY4A+vnWjpDJWdBwm7UHJgKgY3MQz9z6VqtxFgyiGJnIXtCoI7Z6GseAI7ARwFkYnxpNJkj/uLfLtRVpaZXwyS4Jw38XV369M/eoUl0aY8IMkv7xpkkMghUdRykYfXpinb3m/gkEDBLhtgyIBvVdymiMpDLLM7DfJBI69gaDKO8Qimlkj0nIBPTpv08jXMNmf7QWF3HbKbmOVp1PiOCAR3IHf5isiykaOcsykgjOCNiK6G8tm5WozRsMAINJKsfr3/SuddHguGjkXxIe4qkOVRCa5Nrhss4LFojJAdnKAHPn+nlVdxIqttqO+nIboMfrWfZ3JijY8whlIyvZl8hV/+oszPENTu+cDHQ42wan43uJVyXvNII44lz4MnK4Hrv386ix1WWmR1TclTvuc9jWa13IFYTw436qMZPrUbSUatLk+jEZA+f6UzxnbSz3hkgKx5jGvcHqNun86lG2XVYxkBT8S5w1C5YnxHJbrvu1TgmaM5jLf/nbencTmjTWZ2RYkIiVFxkZGrPnVdpEhuAGbTKRgHSNOR0H1qdjpYKxK6guCWGwPUHbp33+9ECCaSNnXBDYDZAHiPlk1PoVopD2i+EsoI2Pjx+1KtBLPUis0DZIycKn7mlSbxaAHsoxCoEwTYH4MkZPX50BdRFSGzoXVjUTufXFTlWbQiAquFOo9NW5P9qz5XJzkkgnberRi/pRRYpMBQdWrtmoKoYE6wMdj3qOT3NTSJn3H3O1UHJ8xUTSviz12xTQI8rkLg7b5OKSRFpNAKg+taUUclvGzCJtOnAcHvnvXM4Ek8CqACX6D1FD+JiNWa0XjW3iLS4M8myIFOw28+lBhcDO5rkgPgeKIl1XbxHAra4XHqia3KZIbJXcjr6VVwywuTEblYwiMNi46L6D963La0eGPNxp0EEL49z8j9v61PJL0VxxrkoW4e0do4oTIG+IhQBnp0O/SniW4BUmT+Cq7gId/1q6HVlxpVhp6tue/TNRRJEcEzSsoG8btjFSsqWxKlyh5IVVH41boPp3pOkKrgAhgB4id6ulXXAkkQVgBnwEjYfIbihZrvUIRNbgeWvdvn/hpRuCI0xMXhwXAwy+Tef7Vj8ZDOiXTRhWyFcgjxHHathg1zgclNK75jbfG5wQAMef1prm3WUG3yAzDSvUAj9u1UUqJyVo49mGkkD0zVSSMkgZSVYHqKIeMpIUfZ12K5qhlHbzrQZ0HQubtWQ4Zm3KsTufMHsfSpJZupCNEqAganLBsDvkf0rNyVOQanzmL65CX7HO+31oBNJYTyWjiVZdwcaht5433BoeeNbeXloAx66g3UdcVXdXJlGAep1HHTP2oeMsAxXp3rqONvh0aybRSKjAY1HP2zjH9aPlktTZ8tlk5jk4k17AeQGd/rWLZXCB4kLaAcKxzgfWikmge2ZBMNa9EMYUeexGMfaoyhzYjiHq2FAKB9vi0Hf16U9c+1xMGIwevYUqPjDRTPIzqFY7KNhVHampVYYv0LydWN6vljHILZOUAx9aVKgcE8NIjaMqq6nIUnG+CcVsRxKZ2R8uuzYbfy/rTUqRhRhXkjyys8jFmB0jPYCoQgGZAehYA0qVVXQr7OhS5mluWtS5WOP4dPXbArVs3aWN1kOQZdPQDYDbpSpVkma4hEionDrPEa/Ay/MA/3NDWdw/LkQBQFOBgdsf2pUqASLxiS8aNif8AlqwYbEE+RFXwW8clsZGXJyM53zn1O/60qVA4Clwl1cRgDTETo9N6qnbTxBrYD+HEoxuck+Z9aVKmXQkjD4si++uQMHxb/IkUBIoER77Z3pUq0rozz7B6iaVKiAVOhINPSrmEk4x08gaIt7uZYyuQVAzhhkUqVD0caSW8borMBkjJ2FNSpUgD/9k=" alt="">
+        <br>
+
+        <!-- From our own paths (relatively) -->
+
+        <img src="./download (1).png">
+
+        <img src="../download.png" > <!-- Out of folder -->
+
+        <!-- To move forward from the demo.html -->
+
+        <img src="/Web Development/F1/F2/download.png" >
+
+        <!-- To display alternative text if the image path is wrong (alt attribute) -->
+
+        <img src="/Web Development/F2/download.png" alt="Image Cracked">
+
+        <br>
+
+        <!-- Lists -->
+
+        <!-- Unordered Lists -->
+
+        <ul>
+            <li>Apple</li>
+            <li>Grape</li>
+            <li>Orange</li>
+        </ul>
+
+        <!-- Ordered Lists -->
+
+        <ol>
+            <li>Apple</li>
+            <li>Grape</li>
+            <li>Orange</li>
+        </ol>
+
+        <!-- Description Lists -->
+
+        <dl>
+            <dt>Address</dt>
+            <dd>Ramavaram , East Godavari , Andhra Pradesh</dd>
+        </dl>
+        
+        <!-- type = "A" "a" "i" "I" to customize the order of the ordered list-->
+
+        <ol type="A">
+            <li>Apple</li>
+            <li>Grape</li>
+            <li>Orange</li>
+        </ol>
+        
+        <ol start="10">
+            <li>Apple</li>
+            <li>Grape</li>
+            <li>Orange</li>
+        </ol>
+
+        <ol type = "I">
+            <li>Apple</li>
+            <li>Grape</li>
+            <li>Orange</li>
+        </ol>
+        
+        <ol type="i">
+            <li>Apple</li>
+            <li>Grape</li>
+            <li>Orange</li>
+        </ol>
+
+        <!-- type = "disc" (default) "circle" "square" "none" to customize unordered list-->
+
+        <ul type = "circle">
+            <li>Apple</li>
+            <li>Grape</li>
+            <li>Orange</li>
+        </ul>
+
+        <ul type = "square">
+            <li>Apple</li>
+            <li>Grape</li>
+            <li>Orange</li>
+        </ul>
+
+        <ul type = "disc">
+            <li>Apple</li>
+            <li>Grape</li>
+            <li>Orange</li>
+        </ul>
+        
+        <ul type = "none">
+            <li>Apple</li>
+            <li>Grape</li>
+            <li>Orange</li>
+        </ul>
+
+        
+        <!-- Tables -->
+         
+        <!-- Table without any border -->
+
+        <h5>Table without any border</h5>
+
+        <table>
+
+            <tr>
+                <td>S.No</td>
+                <td>Name</td>
+                <td>Age</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Tulasi</td>
+                <td>20</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Durga</td>
+                <td>22</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>Pavani</td>
+                <td>40</td>
+            </tr>
+
+        </table>
+
+        <!-- Table with length of border 1px -->
+         
+        <h5>Table without thead and tbody</h5>
+
+        <table border="1">
+
+            <tr>
+                <th>S.No</th>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Tulasi</td>
+                <td>20</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Durga</td>
+                <td>22</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>Pavani</td>
+                <td>40</td>
+            </tr>
+
+        </table>
+        
+        <!-- thead and tbody are used for understanding purpose no difference in the output -->
+
+        <h5>Table with thead and tbody</h5>
+       
+        <table border = "1">
+
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                
+                <tr>
+                    <td>1</td>
+                    <td>Tulasi</td>
+                    <td>20</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Durga</td>
+                    <td>22</td>
+                </tr>
+                
+                <tr>
+                    <td>3</td>
+                    <td>Pavani</td>
+                    <td>40</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+
+        <!-- rowspan and colspan -->
+        <h5>Table with rowspan and colspan</h5>
+        <table border="1">
+            <tr>
+                <th rowspan="2">S.No</th>
+                <th colspan="3">Engineering</th>
+                <th colspan="2">Degree</th>
+            </tr>
+            <tr>
+                <th>AEC</th>
+                <th>ACOE</th>
+                <th>ACET</th>
+                <th>B.Sc</th>
+                <th>B.Com</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>50</td>
+                <td>120</td>
+                <td>57</td>
+                <td>68</td>
+                <td>150</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>50</td>
+                <td>120</td>
+                <td>57</td>
+                <td>68</td>
+                <td>150</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>50</td>
+                <td>120</td>
+                <td>57</td>
+                <td>68</td>
+                <td>150</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>50</td>
+                <td>120</td>
+                <td>57</td>
+                <td>68</td>
+                <td>150</td>
+            </tr>
+        </table>
+        <br>
+
+        <!-- Inputs in HTML -->
+
+        <input /> <!-- Self closing tag -->
+        <br>
+        <br>
+
+        <!-- It will accept all kinds of data if you didn't mention -->
+
+        <label>Enter Username : </label>
+        <input type="text"> <!-- It will accept strings (text format) -->
+        <br>
+        <br>
+        <input type="text" placeholder="Enter Username">
+        <br><br>
+
+        <input type="number"> <!-- It will accept numbers -->
+        <!-- It will not accept alphabets except e -->
+
+
+        <br><br>
+
+        <input type="number" placeholder="Enter Mobile Number">
+
+        <br><br>
+
+        <input type="password"> <!-- For passwords -->
+
+        <br><br>
+
+        <input type="password" placeholder="Enter Password">
+
+        <br><br>
+
+        <input type="radio">
+        <input type="radio">
+        <input type="radio">
+        <br>
+        <!-- No sense we have to give the label names for them -->
+
+        <input type="radio">
+        <label>Male</label>
+        <input type="radio">
+        <label>Female</label>
+        <input type="radio">
+        <label>Other</label>
+
+        <br>
+
+        <!-- It allows multiple selections , so we have to group them all 
+        for uni selection -->
+
+        <!-- uni selection -->
+
+        <input type="radio" name="Gender">
+        <label>Male</label>
+        <input type="radio" name="Gender">
+        <label>Female</label>
+        <input type="radio" name="Gender">
+        <label>Other</label>
+
+        <br>
+
+        <!-- Multiple Selections -->
+
+
+        <input type="checkbox">
+        <label>C</label>
+        <input type="checkbox">
+        <label>C++</label>
+        <input type="checkbox">
+        <label>JAVA</label>
+        <input type="checkbox">
+        <label>Python</label>
+
+        <br>
+        <!-- Differences between radio and checkboxes
+        Radio                    checkbox
+        Round                    square
+        UniSelection             uni/multiple selection
+        If you want to           You can deselect without
+        deselect after           selecting any other option
+        selecting,you can't.
+        You have to select 
+        any other to deselect
+        the previous -->
+
+
+        <!-- Dates -->
+
+        <input type="date">
+        <br><br>
+
+        <!-- Month -->
+         <input type="month">
+
+         <br><br>
+         <!-- Week -->
+
+         <input type="week">
+         <br><br>
+
+         <!-- Accepting Files -->
+          <input type="file">
+          <br><br>
+
+
+          <!-- Colors -->
+
+          <input type="color">
+          <br><br>
+
+          <!-- Range  -->
+
+          <input type="range">
+          <br>
+
+          <!-- TextArea For displaying bigger text -->
+
+
+          <textarea></textarea>
+
+
+          <br>
+          <br>
+
+          <form>
+
+              <input type="text" placeholder="Enter UserName" maxlength="10">
+              
+              <br><br>
+              <!-- We can restrict the length of strings -->
+
+
+              <input type="text" placeholder="Enter Username" maxlength="10" minlength="2">
+
+              <!-- How to check the minlength 
+               There comes the use of submit button
+               It validates all the conditions when we hit the submit button 
+               If the entered string does not satisfy the condition 
+               it will raise a pop - up message
+               -->
+
+              
+               <br><br>
+
+               <input type="number" placeholder="Enter Number" min="100" max="1000">
+               <br><br>
+
+               <input type="password" minlength="5" maxlength="10">
+               <br><br>
+
+               <input type="text" placeholder="Enter Name" required>
+
+               <br><br>
+
+               <input type="range" min="0" max="100">
+                <br><br>
+               <!-- We can understand this usage through JAVASCRIPT -->
+
+                
+              <!-- Drop Down Menu  -->
+
+              <select>
+                <option>Apple</option>
+                <option>Banana</option>
+                <option>Orange</option>
+                <option>Grape</option>
+              </select>
+
+
+              <!-- To select a default one  -->
+              <select>
+                <option>Apple</option>
+                <option>Banana</option>
+                <option selected>Orange</option>
+                <option>Grape</option>
+              </select>
+
+              <!-- To not to select the option  -->
+
+             <select>
+                <option>Apple</option>
+                <option>Banana</option>
+                <option selected>Orange</option>
+                <option disabled>Grape</option>
+             </select>
+              
+             <!-- Place holder for selection tag  -->
+             <select>
+                <option disabled selected>Choose Fruit</option>
+                <option>Apple</option>
+                <option>Banana</option>
+                <option>Orange</option>
+                <option>Grape</option>
+              </select>
+
+              <br><br>
+
+               <input type="submit">
+
+               <!-- Reset button  -->
+                <input type="reset">
+          </form>
+
+          <!-- Block and Inline elements  -->
+
+          <p>Thub</p>
+          <h1>Technical Hub</h1>
+          <p>Thub</p>
+          <h1>Technical Hub</h1>
+          <p>Thub</p>
+          <h1>Technical Hub</h1>
+
+
+          <img src="./download (1).png" alt="">
+          <img src="./download (1).png" alt="">
+
+          <br>
+
+          <span>Hai</span>
+          <span>Hai</span>
+          <span>Hai</span>   <!-- In line element  -->
+
+          <br>
+
+          <!-- Video tags  -->
+
+          <!-- It doesn't have any options to control the videos  -->
+
+          <video height="300px" width="300px">
+            <source src="./244839_tiny.mp4">
+          </video>
+         <br>
+          <!-- to control use controls  -->
+
+          <video height="300px" width="300px" controls>
+            <source src="./244839_tiny.mp4">
+          </video>
+          <br>
+          <!-- to play infinitely  -->
+
+          <video height="300px" width="300px" controls loop>
+            <source src="./244839_tiny.mp4">
+          </video>
+
+          <br>
+
+          <!-- To insert videos from third party apps like youtube etc  -->
+
+          <video>
+            <source src="https://www.youtube.com/watch?v=NSAOrGb9orM&ab_channel=RoundtheClock">
+          </video>  <!-- We can't  -->
+          <br>
+
+          <!-- To embed a video go to youtube click on share and click on embed  -->
+
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/NSAOrGb9orM?si=4k7oF6GwfcxwHiYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+          <br><br>
+          <!-- iframe tag to insert one website into other website  -->
+
+          <iframe src="https://maya.technicalhub.io/" frameborder="0" height="50%" width="100%"></iframe>
+
+          <br><br>
+
+          <!-- Audio Tag  -->
+
+          <audio controls>
+            <source src="./donesound-330986.mp3">
+          </audio>
+          <br><br><br>
+
+          <!-- Semantic Elements  -->
+
+          <header>
+             <!-- Describes the heading of web page  -->
+
+             MY SAMPLE PAGE 
+          </header>
+
+          <nav>
+            <!-- Navigation linkss  -->
+             <a href="">Home</a>
+             <a href="">About</a>
+             <a href="">Contact</a>
+          </nav>
+
+          <!-- main content  -->
+
+          <main>
+            <aside>Side content</aside>
+
+            <section>
+                <article>Section 1</article>
+            </section>
+
+            <section>
+                <article>Section 2</article>
+            </section>
+
+          </main>
+
+          <footer>Footer</footer>
+
+
+          <!-- Advantage of Semantic Elements  
+           1) SEO Search Engine Optimization
+           2) Screen Readers
+          -->
+
+
+          <br><br><br>
+
+          <!-- Using DIV  -->
+          
+          <!-- header  -->
+           <div>MY SAMPLE PAGE - 2</div>
+
+           <!-- Navigation  -->
+           <div>
+             <a href="">Home</a>
+             <a href="">About</a>
+             <a href="">Contact</a>
+           </div>
+
+           <!-- Main content  -->
+            <div>
+                <!-- aside content  -->
+                 <div>aside content</div>
+
+                <!-- section 1  -->
+                 <div>
+                    <!-- article 1  -->
+                     <div>Section 1</div>
+                 </div>
+                 <!-- section 2  -->
+                 <div>
+                    <!-- article 2  -->
+                     <div>Section 2</div>
+                 </div>
+            </div>
+
+            <!-- footer  -->
+            <div>Footer Content</div>
+
+            <!-- Ofcourse , the same can be replicated by using div tags,
+            but it is recommended to use semantic Tags
+            for better understanding  -->
+
+            <!-- Entities  -->
+
+            <!-- There is no space between the images  -->
+            <img src="./download (1).png" alt="">
+            <img src="./download (1).png" alt="">
+            <br>
+
+            <!-- There is space between the images 
+             &nbsp;  non breakable space (1/10th of inch)
+             On hovering it will not get highlighted,
+             because it is not considered
+            -->
+
+            <img src="./download (1).png" alt="">
+            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+             &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+            <img src="./download (1).png" alt="">
+            <br><br><br>
+
+            <!-- Entities  -->
+
+            &gt;
+            &lt;
+            &amp;
+            &apos;
+            &cent;
+            &pound;
+            &yen;
+            &euro;
+            &copy;
+            &reg;
+            &trade;
+
+            <br>
+
+            <!-- Symbols  -->
+
+            <!-- Decimal Code  -->
+
+            &#9728;
+            &#9729;
+            &#9730;
+            &#9731;
+            &#9732;
+            &#9733;
+            &#9734;
+            &#9735;
+            &#9736;
+            
+            <!-- Hexa Code  -->
+
+            <br>
+
+
+            &#x2600;
+            &#x2601;
+            &#x2602;
+            &#x2603;
+            &#x2604;
+            &#x2605;
+            &#x2606;
+            &#x2607;
+            &#x2608;
+            <br>
+            &#x2609;
+            &#x260A;
+            &#x260B;
+            &#x260C;
+            &#x260D;
+            &#x260E;
+            &#x260F;
+            &#x2610;
+
+            <br>
+            <!-- Emojis  -->
+
+            &#128507;
+            &#128508;
+            &#128509;
+            &#128510;
+            &#128511;
+            &#128512;
+            &#128513;
+            &#128514;
+            &#128515;
+            &#128516;
+            &#128517;
+            &#128518;
+            &#128519;
+            &#128520;
+            &#128521;
+            &#128522;
+            &#128523;
+            &#128524;
+            &#128525;
+            &#128526;
+            &#128527;
+            &#128528;
+            &#128529;
+            &#128530;
+            &#128541;
+            &#128542;
+            &#128543;
+            &#128544;
+            &#128545;
+            &#128546;
+            &#128547;
+            &#128548;
+            &#128549;
+            &#128550;
+            &#128551;
+            &#128552;
+            &#128553;
+            &#128554;
+            &#128555;
+            &#128556;
+            &#128557;
+            &#128558;
+            &#128559;
+            &#128560;
+            &#128561;
+            &#128562;
+            &#128563;
+            &#128564;
+            &#128565;
+            &#128566;
+            &#128567;
+            &#128568;
+            &#128569;
+
+    </body>
+</html>

@@ -1,0 +1,76 @@
+<html>
+    <head>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <style>
+            .nav {
+                height: 100px;
+                width: 100%;
+                border: 2px solid black;
+                background-color: gainsboro;
+                display: flex;
+                justify-content: space-between;
+                
+            }
+
+            .content {
+                
+                width: 50%;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 40px;
+            }
+
+            .logo {
+                width: 90px;
+                /* border: 1px solid black; */
+            }
+
+            .child1 {
+                padding-left: 50px;
+                padding-top: 35px;
+            }
+
+            .child2 {
+                width: 70px;
+                display: none;
+                margin-right: 20px;
+                margin-top: 10px;
+                padding: 10px;
+            }
+
+            .logo:hover .child2 {
+                display: block;
+                background-color: black;
+                color: white;
+            }
+
+
+        </style>
+
+    </head>
+    <body>
+        
+        <div class="nav">
+            <div class="logo1">
+                <img src="./Nani.jpeg" alt="" height="100px">
+            </div>
+            <div class="content">
+                <div class="c1">Home</div>
+                <div class="c2">About</div>
+                <div class="c3">Retail</div>
+                <div class="c4">Products</div>
+            </div>
+
+            <div class="logo">
+                <div class="child1">
+                   <i class="fas fa-user"></i>
+                </div>
+                <div class="child2">
+                    <div class="sub">Log Out</div>
+                    <div class="sub">Edit Profile</div>
+                    <div class="sub">Reset Password</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

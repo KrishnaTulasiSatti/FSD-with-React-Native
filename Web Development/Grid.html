@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <style>
+            .parent{
+                width: 400px;
+                height: 400px;
+
+                display: grid;
+
+                grid-template-rows: 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
+
+                /* grid-template-columns: repeat(5,1fr);  */
+                /* grid-template-rows: 1fr 2fr 1fr;  */
+
+                justify-items: center;
+                align-items: center;
+            }
+
+            .child1,.child2,.child3,.child4{
+                
+                width: 100px;
+                height: 100px;
+
+                border: 1px solid red;
+
+                
+            }
+
+            .child2 {
+                justify-self: start;
+                align-self: end;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        
+        <div class="parent">
+
+            <div class="child1"></div>
+            <div class="child2"></div>
+            <div class="child3"></div>
+            <div class="child4"></div>
+         
+
+        </div>
+
+    </body>
+</html>

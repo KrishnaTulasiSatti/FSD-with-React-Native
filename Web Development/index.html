@@ -1,0 +1,138 @@
+<html>
+    <head>
+
+        <style>
+            .demo {
+                width: 200px;
+                height: 200px;
+
+                background-color: red;
+
+
+                animation-name: animation1;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+
+            }
+
+            @keyframes animation1 {
+                from {
+                    background-color: red;
+                }
+                to {
+                    background-color: blue;
+                }
+            }
+
+            .demo2{
+                width: 200px;
+                height: 200px;
+
+                background-color: black;
+
+
+                animation-name: animation2;
+                animation-duration: 2s;
+                animation-iteration-count: 3;
+
+            }
+
+            .demo3 {
+                width: 200px;
+                height: 200px;
+
+                background-color: yellow;
+                position: relative;
+                left: 0px;
+
+                animation-name: animation3;
+                animation-duration: 5s;
+                animation-iteration-count: 6;
+            }
+
+            @keyframes animation2 {
+                from {
+                    background-color: aquamarine;
+                }
+                to {
+                    background-color: red;
+                }
+            }
+
+            @keyframes animation3 {
+                from {
+                    left: 0px;
+                }
+                to {
+                    left: 200px;
+                }
+            }
+            
+
+            .demo4,.demo5,.demo6,.demo7 {
+                width: 200px;
+                height: 200px;
+                
+                background-color: blue;
+
+                position: relative;
+
+                animation-name: animation4;
+                animation-duration: 4s;
+                animation-iteration-count: 4;
+
+                /* animation-timing-function: linear; */
+
+
+
+            }
+
+            .demo4 {
+                
+                animation-timing-function: ease;
+            }
+
+            .demo5 {
+                animation-timing-function: ease-in;
+            }
+
+            .demo6 {
+                animation-timing-function: ease-out;
+            }
+
+            .demo7 {
+                animation-timing-function: ease-in-out;
+            }
+
+
+
+            @keyframes animation4 {
+                0% {
+                    left: 0px;
+                }
+                50% {
+                    left: 200px;
+                }
+                100% {
+                    left: 500px;
+                }
+
+            }
+
+
+
+        </style>
+
+    </head>
+    <body>
+        
+        <div class="demo"></div>
+        <div class="demo2"></div>
+        <div class="demo3"></div>
+
+        <div class="demo4"></div><br>
+        <div class="demo5"></div><br>
+        <div class="demo6"></div><br>
+        <div class="demo7"></div>
+    </body>
+</html>

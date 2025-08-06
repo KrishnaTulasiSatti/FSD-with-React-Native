@@ -1,0 +1,143 @@
+body {
+    background-color: black;
+  
+}
+
+.sun {
+    position: relative;
+    top: 600px;
+    left: 680px;
+    height: 120px;
+    width: 120px;
+}
+
+.sun img {
+    position: absolute;
+    left: -20px;
+    height: 120px;
+    width: 170px;
+}
+
+.mercury {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: -40px;   
+    left: -40px;  
+    border: 1px solid white;
+    border-radius: 50%;
+    animation: myanimation 5s linear infinite;
+    
+}
+
+.mer {
+    height: 50px;
+    width: 50px;
+    background-image: url('./mercury.jpeg');
+    background-size: cover;
+    position: absolute;
+    top: -20px;
+    left: 100px; 
+}
+
+.venus {
+    height: 350px;
+    width: 350px;
+    position: absolute;
+    top: -110px;   
+    left: -110px;  
+    border: 1px solid white;
+    border-radius: 50%;
+    animation: myanimation 8s linear infinite;
+    
+}
+
+.v {
+    height: 50px;
+    width: 50px;
+    background-image: url('./venus.jpeg');
+    background-size: cover;
+    position: absolute;
+    top: -20px;
+    left: 100px; 
+}
+
+.earth {
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: -180px;   
+    left: -180px;  
+    border: 1px solid white;
+    border-radius: 50%;
+    animation: myanimation 10s linear infinite;
+    
+}
+
+.e {
+    height: 50px;
+    width: 50px;
+    background-image: url('./earth.jpeg');
+    background-size: cover;
+    position: absolute;
+    top: -5px;
+    left: 100px; 
+    
+}
+
+.moon {
+    height: 95px;
+
+    width: 95px;
+    border-radius: 50%;
+    border: 1px solid white;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+     animation: myanimation 5s linear infinite;
+}
+
+.m {
+    height: 30px;
+    width: 50px;
+    background-image: url('./moon.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -10px;
+    border-radius: 50%;
+}
+
+.mars {
+    height: 700px;
+    width: 700px;
+    position: absolute;
+    top: -280px;   
+    left: -280px;  
+    border: 1px solid white;
+    border-radius: 50%;
+    animation: myanimation 6s linear infinite;
+    
+}
+
+.mar {
+    height: 100px;
+    width: 100px;
+    background-image: url('./mars.jpeg');
+    background-size: cover;
+    position: absolute;
+    left: 250px;
+    top: -40px;
+    
+}
+
+
+
+@keyframes myanimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

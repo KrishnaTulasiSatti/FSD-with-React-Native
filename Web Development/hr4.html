@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Comprehensive Health Report</title>
+
+    <link rel="stylesheet" href="hr4.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="report-header">
+        <div class="header-container">
+            <div class="brand-info">
+                <img src="./Images/logo.jpg" alt="Health Portal Logo" class="portal-logo">
+                <span class="portal-name">WellSync Health</span>
+            </div>
+            <nav class="main-report-nav">
+                <ul>
+                    <li><a href="./Welcomepage2.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="./symptomschecker.html" class="nav-link"><i class="fas fa-microscope"></i> Symptom Analysis</a></li>
+                    <li><a href="./Hospitals.html" class="nav-link"><i class="fas fa-hospital"></i> Find Care</a></li>
+                    <li><a href="./Firstaid.html" class="nav-link"><i class="fas fa-first-aid"></i> First Aid Guide</a></li>
+                    <li><a href="./Welcomepage.html" class="nav-link action-button-header"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome, valued user! Your Personalized Health Report is Ready.</h1>
+            <p class="tagline">Providing clear insights for a healthier you.</p>
+            <div class="disclaimer-note">
+                <i class="fas fa-info-circle"></i>
+                <p>This report offers guidance based on your inputs. It's not a substitute for professional medical advice. Always consult a healthcare professional for diagnosis and treatment.</p>
+            </div>
+        </div>
+        <div class="hero-image-wrapper">
+            <img src="./Images/hero-doctor.jpg" alt="Doctor and patient illustration" class="hero-illustration">
+        </div>
+    </section>
+
+    <main class="report-main-content">
+
+        <section class="info-section summary-section">
+            <div class="section-icon-wrapper">
+                <i class="fas fa-chart-pie section-icon"></i>
+            </div>
+            <div class="section-content">
+                <h2>Your Health Snapshot</h2>
+                <div class="summary-details-grid">
+                    <div class="detail-item">
+                        <span class="detail-label">Possible Condition</span>
+                        <span class="detail-value highlight-primary">Common Cold</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Reported Symptoms</span>
+                        <span class="detail-value">Fever, Cough, Runny Nose</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Symptom Duration</span>
+                        <span class="detail-value">Approximately 1 Day</span>
+                    </div>
+                    <div class="detail-item urgency-status">
+                        <span class="detail-label">Urgency Level</span>
+                        <span class="detail-value status-low">Low</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section condition-details-section">
+            <div class="section-icon-wrapper">
+                <i class="fas fa-book-reader section-icon"></i>
+            </div>
+            <div class="section-content">
+                <h2>Understanding the Common Cold</h2>
+                <p>The **common cold** is a highly contagious viral infection of the nose and throat. It is caused by many different types of viruses, with rhinoviruses being the most common. It spreads easily through airborne droplets from coughs and sneezes, or by direct contact with contaminated surfaces.</p>
+                <p>Symptoms typically appear one to three days after exposure and can include a runny or stuffy nose, sore throat, cough, congestion, slight body aches or a mild headache, and sometimes sneezing. The common cold is usually harmless and symptoms typically resolve within 7 to 10 days.</p>
+                <a href="https://en.wikipedia.org/wiki/Common_cold" target="_blank" class="read-more-button">
+                    <i class="fas fa-external-link-alt"></i> Learn More on Wikipedia
+                </a>
+            </div>
+        </section>
+
+        <section class="info-section recommended-steps-section">
+            <div class="section-icon-wrapper">
+                <i class="fas fa-clipboard-check section-icon"></i>
+            </div>
+            <div class="section-content">
+                <h2>Recommended Care & Next Steps</h2>
+                <ul class="action-list">
+                    <li><i class="fas fa-bed action-icon"></i> <strong>Rest:</strong> Ensure adequate rest to help your body recover.</li>
+                    <li><i class="fas fa-tint action-icon"></i> <strong>Hydration:</strong> Drink plenty of fluids like water, juice, and broth.</li>
+                    <li><i class="fas fa-hand-holding-medical action-icon"></i> <strong>Medical Consultation:</strong> If symptoms worsen, persist beyond 10 days, or new severe symptoms (e.g., difficulty breathing, chest pain) develop, please **consult a doctor promptly.**</li>
+                    <li><i class="fas fa-shield-alt action-icon"></i> <strong>Prevention:</strong> Wash hands frequently, avoid touching your face, and cover coughs/sneezes.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="info-section wellbeing-section">
+            <div class="section-icon-wrapper">
+                <i class="fas fa-leaf section-icon"></i>
+            </div>
+            <div class="section-content">
+                <h2>Embracing Your Wellbeing Journey</h2>
+                <p class="quote-text">"Take care of your body. It's the only place you have to live."</p>
+                <p class="quote-author">– Jim Rohn</p>
+                <img src="./Images/wellbeing-inspire.jpg" alt="Person practicing mindfulness" class="wellbeing-image">
+                <p class="closing-thought">Remember, consistent small steps contribute to long-term health. Keep nurturing your well-being!</p>
+            </div>
+        </section>
+
+        <section class="action-buttons-section">
+            <a href="./DietPage.html" class="action-button primary-button">
+                <i class="fas fa-apple-alt"></i> Get Your Personalized Diet Plan
+            </a>
+            <a href="./Hospitals.html" class="action-button secondary-button">
+                <i class="fas fa-hospital-alt"></i> Find Nearest Healthcare Facilities
+            </a>
+            <a href="#" class="action-button tertiary-button">
+                <i class="fas fa-file-download"></i> Download Full Report (PDF)
+            </a>
+        </section>
+
+    </main>
+
+    <footer class="report-footer">
+        <p>&copy; 2025 WellSync Health. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </footer>
+
+</body>
+</html>
