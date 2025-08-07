@@ -1,0 +1,36 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            let Fun = (a,b) => {
+                console.log(a+b);
+            }
+
+            Fun(2,3);
+
+            let data = {
+                "name" : "Tulasi",
+                "age"  : 19,
+                "gender" : "Female"
+            }
+
+            const {name,age,gender} = data;
+
+            console.log(name,age,gender);
+
+            // Spread Operator
+
+            var arr1 = [1,2,3,4,5]
+            var arr2 = [...arr1,6,7]
+            console.log(arr2);
+
+            var newarr = Object.entries(data)
+            console.log(...newarr);
+
+            console.log(`I am ${name}`);
+
+            // async await in es6
+
+        </script>
+    </body>
+</html>
