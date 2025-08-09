@@ -9,9 +9,7 @@ var heroes = [
     "HeroImage" : "../Chaitanya.jpeg",
     "Name"  : "Naga Chaitanya",
     "Age"   : "35"
-},
-
-
+}
 ]
 
 // var cards = heroes.map((ele) => {
@@ -51,6 +49,6 @@ heroes.map((ele) => {
     </div>`
 
     var parent = document.getElementsByClassName("card-parent")[0]
-    parent.innerHTML += hero
+    parent.innerHTML += hero;
 
 })
